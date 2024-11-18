@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikace Počasí</title>
+    <link rel="stylesheet" href="./res/css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="shortcut icon" href="./res/img/sun.webp" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Aplikace Počasí</h1>
+        <input type="text" id="cityInput" placeholder="Zadejte název města">
+        <button id="search" onclick="getWeather()">Hledat</button>
+        <div id="weatherResult"></div>
+        <div id="map"></div>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="./res/js/main.js"></script>
+</body>
+</html>
